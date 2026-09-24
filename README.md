@@ -1,11 +1,11 @@
-# OrderIN interactive demo
+# Qazyna interactive demo
 
 One inbox for Instagram and WhatsApp orders, with AI that turns messages into paid orders.
 This is a clickable prototype with sample data (a home bakery in Astana). No real APIs, payments or customers.
 
 Team: Ikhsanova Aziza, Zere Zhussupbekova (Astana IT University)
 
-Live demo: https://zere90.github.io/orderin-demo/
+Live demo: https://zere90.github.io/qazyna-demo/
 
 ## Demo flow
 
