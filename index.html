@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>OrderIN Demo</title>
+  <meta name="description" content="OrderIN: one inbox for Instagram and WhatsApp orders, with AI that turns messages into paid orders.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Figtree:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="stage">
+  <section class="guide" aria-label="Demo guide">
+    <div class="brand">Order<b>IN</b></div>
+    <span class="tag">Interactive demo · sample data</span>
+    <h2>One inbox for Instagram and WhatsApp orders, with AI that turns messages into paid orders</h2>
+    <p>Aru Bakes is a sample home bakery in Astana. Its customers write in Instagram Direct and WhatsApp, in English, Russian and Kazakh. Try the flow below on the phone.</p>
+    <ol class="steps" id="steps">
+      <li data-k="open">Open Dana's Instagram message in the Inbox</li>
+      <li data-k="create">Check what the AI extracted and create the order</li>
+      <li data-k="pay">Tap "Customer paid" to simulate a Kaspi payment</li>
+      <li data-k="stock">Open Stock: the honey cake count went down by itself</li>
+      <li data-k="today">Open Today to see revenue and hours saved</li>
+    </ol>
+    <button class="ghost" id="reset" type="button">Reset demo</button>
+    <p class="note">Prototype for the AITU AI Startups registry, September 2026. Messages, customers and payments are made up; payment links are not real.</p>
+  </section>
+
+  <div class="phone" id="phone">
+    <header class="topbar" id="topbar"></header>
+    <main class="screen" id="screen"></main>
+    <nav class="tabs" role="tablist" id="tabs">
+      <button role="tab" data-tab="inbox"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5h16v11H8l-4 4z"/></svg>Inbox<span class="badge" id="b-inbox"></span></button>
+      <button role="tab" data-tab="orders"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6"/></svg>Orders<span class="badge" id="b-orders"></span></button>
+      <button role="tab" data-tab="stock"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7l9-4 9 4-9 4z"/><path d="M3 7v10l9 4 9-4V7"/></svg>Stock</button>
+      <button role="tab" data-tab="today"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>Today</button>
+    </nav>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
